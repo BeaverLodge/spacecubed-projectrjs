@@ -23,6 +23,7 @@ app.use(methodOverride());
 
 app.get('/', routes.client);
 app.get('/events', routes.events);
+app.get('/privacy', routes.privacy);
 
 app.use(serveStatic(__dirname + '/public'));
 

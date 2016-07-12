@@ -47,3 +47,7 @@ exports.events = function(req, res){
     db_connection.open(search);
   }
 };
+
+exports.privacy = function(req, res) {
+  res.render('privacy', {title: 'spacecubed-projectrjs Privacy Notice'});
+}
